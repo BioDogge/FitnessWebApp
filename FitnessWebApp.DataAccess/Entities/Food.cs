@@ -12,25 +12,25 @@ namespace FitnessWebApp.DataAccess.Entities
         public string Name { get; set; } = string.Empty;
 
         /// <summary>
-        /// The amount of proteins in food.
+        /// The amount of proteins in food (in 100 grams).
         /// </summary>
         [Column(TypeName = "decimal(4,1)")]
         public decimal Proteins { get; set; }
 
         /// <summary>
-        /// The amount of fats in food.
+        /// The amount of fats in food (in 100 grams).
         /// </summary>
         [Column(TypeName = "decimal(4,1)")]
         public decimal Fats { get; set; }
 
         /// <summary>
-        /// The amount of carbohydrates in food.
+        /// The amount of carbohydrates in food (in 100 grams).
         /// </summary>
         [Column(TypeName = "decimal(4,1)")]
         public decimal Carbohydrates { get; set; }
 
         /// <summary>
-        /// The amount of calories in food.
+        /// The amount of calories in food (in 100 grams).
         /// </summary>
         [Column(TypeName = "decimal(4,1)")]
         public decimal Calories { get; set; }

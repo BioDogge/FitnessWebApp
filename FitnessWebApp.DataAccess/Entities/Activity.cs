@@ -1,4 +1,5 @@
-﻿namespace FitnessWebApp.DataAccess.Entities
+﻿
+namespace FitnessWebApp.DataAccess.Entities
 {
     public class Activity
     {
