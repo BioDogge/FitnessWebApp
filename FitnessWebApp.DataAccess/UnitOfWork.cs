@@ -23,7 +23,7 @@ namespace FitnessWebApp.DataAccess
 
         public UnitOfWork() => context = new FitnessContext();
 
-        public IRepository<Activity> Activities
+        public IRepositoryRead<Activity> Activities
         {
             get
             {
@@ -33,7 +33,7 @@ namespace FitnessWebApp.DataAccess
             }
         }
 
-        public IRepository<Eating> Eatings
+        public IRepositoryCrud<Eating> Eatings
         {
             get
             {
@@ -43,7 +43,7 @@ namespace FitnessWebApp.DataAccess
             }
         }
 
-        public IRepository<Exercise> Exercises
+        public IRepositoryCrud<Exercise> Exercises
         {
             get
             {
@@ -53,7 +53,7 @@ namespace FitnessWebApp.DataAccess
             }
         }
 
-        public IRepository<FoodEating> FoodEatings
+        public IRepositoryCrud<FoodEating> FoodEatings
         {
             get
             {
@@ -63,7 +63,7 @@ namespace FitnessWebApp.DataAccess
             }
         }
 
-        public IRepository<Food> Foods
+        public IRepositoryRead<Food> Foods
         {
             get
             {
@@ -73,7 +73,7 @@ namespace FitnessWebApp.DataAccess
             }
         }
 
-        public IRepository<User> Users
+        public IRepositoryCrud<User> Users
         {
             get
             {

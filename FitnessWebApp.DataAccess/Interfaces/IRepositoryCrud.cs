@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FitnessWebApp.DataAccess.Interfaces
 {
-    public interface IRepository<T> where T : class
+    public interface IRepositoryCrud<T> where T : class
     {
         /// <summary>
         /// Get all data from the database table specifed in the generic type parameter.

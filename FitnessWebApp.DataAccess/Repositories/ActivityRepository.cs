@@ -10,25 +10,13 @@ using System.Threading.Tasks;
 
 namespace FitnessWebApp.DataAccess.Repositories
 {
-    public class ActivityRepository : IRepository<Activity>
+    public class ActivityRepository : IRepositoryRead<Activity>
     {
         private FitnessContext context;
 
         public ActivityRepository(FitnessContext context)
         {
             this.context = context;
-        }
-
-        public void Create(Activity item)
-        {
-            context.Activities.Add(item);
-        }
-
-        public void Delete(int id)
-        {
-            var activity = GetById(id);
-            if (activity != null)
-                context.Activities.Remove(activity);
         }
 
         public IEnumerable<Activity> GetAll()
@@ -39,11 +27,6 @@ namespace FitnessWebApp.DataAccess.Repositories
         public Activity GetById(int id)
         {
             return context.Activities.Find(id);
-        }
-
-        public void Update(Activity item)
-        {
-            context.Entry(item).State = EntityState.Modified;
         }
     }
 }

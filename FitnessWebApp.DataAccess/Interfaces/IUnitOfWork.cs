@@ -9,12 +9,12 @@ namespace FitnessWebApp.DataAccess.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IRepository<User> Users { get; }
-        IRepository<Activity> Activities { get; }
-        IRepository<Exercise> Exercises { get; }
-        IRepository<Food> Foods { get; }
-        IRepository<Eating> Eatings { get; }
-        IRepository<FoodEating> FoodEatings { get; }
+        IRepositoryCrud<User> Users { get; }
+        IRepositoryRead<Activity> Activities { get; }
+        IRepositoryCrud<Exercise> Exercises { get; }
+        IRepositoryRead<Food> Foods { get; }
+        IRepositoryCrud<Eating> Eatings { get; }
+        IRepositoryCrud<FoodEating> FoodEatings { get; }
 
         void Save();
     }

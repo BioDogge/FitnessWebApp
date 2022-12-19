@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FitnessWebApp.DataAccess.Repositories
 {
-    public class FoodEatingRepository : IRepository<FoodEating>
+    public class FoodEatingRepository : IRepositoryCrud<FoodEating>
     {
         private FitnessContext context;
 
